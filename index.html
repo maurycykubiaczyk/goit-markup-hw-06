@@ -31,7 +31,9 @@
           </a>
           <nav>
             <ul class="header-links">
-              <li><a class="header-link active-link" href="index.html">agencja</a></li>
+              <li>
+                <a class="header-link active-link" href="index.html">agencja</a>
+              </li>
               <li>
                 <a class="header-link" href="portfolio.html">portfolio</a>
               </li>
@@ -65,7 +67,12 @@
           <div class="background-gradient">
             <div class="header-and-button container">
               <h1 class="header">efektywne rozwiązania dla waszego biznesu</h1>
-              <input class="main-button" type="button" value="zamów usługę" data-modal-open/>
+              <input
+                class="main-button"
+                type="button"
+                value="zamów usługę"
+                data-modal-open
+              />
             </div>
           </div>
         </div>
@@ -445,12 +452,114 @@
               </li>
             </ul>
           </div>
+          <div class="newsletter-section">
+            <h3 class="sign-newsletter">zapisz się do newsletttera</h3>
+            <div class="newsletter-wrapper">
+              <div class="newsletter-item">
+                <form>
+                  <label class="email-footer" for="email">
+                    <input
+                    class="email-footer-description"
+                      type="text"
+                      name="mail"
+                      id="mail"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                </form>
+              </div>
+              <div class="newsletter-item">
+                <button class="button-footer" type="submit">
+                  Zapisz się
+                  <svg width="24" height="24" class="footer-icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>&#10008;</button>
+
+        <h4 class="modal-name">Zostaw swoje dane w formularzu poniżej</h4>
+
+        <form class="contact-form" autocomplete="on">
+          <div>
+            <label class="label-description" for="name">
+              Imie
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+              <input
+                class="form-description"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label class="label-description" for="tel">
+              Telefon
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+              <input class="form-description" type="text" name="tel" id="tel" />
+            </label>
+          </div>
+
+          <div>
+            <label class="label-description" for="email">
+              Email
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+              <input
+                class="form-description"
+                type="text"
+                name="email"
+                id="email"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label class="label-description" for="comment">
+              Komentarz
+              <textarea
+                class="form-comment"
+                name="comment"
+                placeholder="Wprowadź tekst"
+                id="comment"
+              ></textarea>
+            </label>
+          </div>
+          <div class="statute">
+            <label for="statute_form" class="statute-form">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="statute"
+                id="statute_form"
+              />
+              <svg width="16" height="15" class="form-icon-check">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <span class="statute-info">
+                Oświadczam iż akceptuję
+                <a class="statute-link" href="#"> Regulamin </a>
+                i
+                <a class="statute-link" href="#">Politykę Prywatności.</a></span
+              >
+            </label>
+            <button class="button-statute" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
