@@ -729,6 +729,9 @@ background: rgba(47, 48, 58, 0.4);
 
 .statute {
     margin-top: 20px;
+    display: inline;
+    text-align: center;
+    justify-content: center;
 }
 
 .statute-info {
@@ -774,16 +777,18 @@ background: rgba(47, 48, 58, 0.4);
     width: 16px;
     height: 15px;
     appearance: none;
-    margin-left: 15px;
-    margin-right: 8px;
+    margin-left: auto;
+    margin-right: 7px; 
 }
 
 .form-icon-check {
     position: absolute;
-    left: 15px;
+    left: 0px;
     bottom: 4px;
     opacity: 0;
     border-radius: 4px;
+    
+    
 }
 
 .checkbox:checked + .form-icon-check {
