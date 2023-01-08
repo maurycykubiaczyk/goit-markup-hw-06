@@ -661,7 +661,9 @@ background: rgba(47, 48, 58, 0.4);
     font-size: 20px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin: 40px 40px 12px 40px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
 .contact-form {
@@ -761,7 +763,6 @@ background: rgba(47, 48, 58, 0.4);
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
-    margin-left: 124px;
     margin-top: 30px;
     padding: 0;
 }
